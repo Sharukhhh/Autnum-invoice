@@ -1,6 +1,6 @@
 
 # About:
-    **A payment invoice UI built using ReactJs and Tailwind CSS**
+**A payment invoice UI built using ReactJs and Tailwind CSS**
 
 
 
