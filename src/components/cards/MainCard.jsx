@@ -4,6 +4,7 @@ import InputGroups from './card-contents/InputGroups'
 import TableSection from './card-contents/TableSection'
 import SecondaryTitle from './SecondaryTitle'
 import CardTotal from './card-contents/CardTotal'
+import Button from '../buttons/Button'
 
 const MainCard = ({mainTitle , hasTable , isApprovals}) => {
     return (
@@ -20,6 +21,11 @@ const MainCard = ({mainTitle , hasTable , isApprovals}) => {
                         <TableSection/>
                         <CardTotal title={mainTitle}/>
                     </>
+                )}
+                {!hasTable && !isApprovals && (
+                    <div className='flex justify-end mb-2'>
+                        <Button text={'Apply to all'}/>
+                    </div>
                 )}
             </div>
         </>

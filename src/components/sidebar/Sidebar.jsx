@@ -6,23 +6,28 @@ import { FiPieChart } from "react-icons/fi";
 import { MdOutlineAccountCircle } from "react-icons/md";
 import { HiOutlineSquaresPlus } from "react-icons/hi2";
 import { SlSettings } from "react-icons/sl";
+import { IoMdCube } from "react-icons/io";
 import SideIcons from './SideIcons';
 
 const Sidebar = () => {
     return (
         <>
-            <div className='fixed top-0 left-0 h-full w-16 flex flex-col border rounded-r-lg bg-slate-100 text-white shadow-lg'>
+            <div className='fixed top-0 left-0 h-full w-16 flex flex-col border rounded-r-lg bg-white hadow-lg'>
                 <div className='flex flex-col items-center mt-10 space-y-3 flex-grow'>
-                    <SideIcons icon={<IoSearchOutline color='black'/>} />
-                    <SideIcons icon={<GrHomeRounded color='black'/>} />
-                    <SideIcons icon={<BiChalkboard color='black'/>} />
-                    <SideIcons icon={<FiPieChart color='black'/>} />
-                    <SideIcons icon={<GrGroup color='black'/>} />
-                    <SideIcons icon={<MdOutlineAccountCircle color='black'/>} />
-                    <SideIcons icon={<HiOutlineSquaresPlus color='black'/>} />
+                    <SideIcons icon={<IoMdCube color='violet' size={20} />} />
+                    <span></span>
+                    <span></span>
+                    <SideIcons icon={<IoSearchOutline />} />
+                    <SideIcons icon={<GrHomeRounded/>} />
+                    <SideIcons icon={<BiChalkboard />} />
+                    <span></span>
+                    <SideIcons icon={<FiPieChart/>} />
+                    <SideIcons icon={<GrGroup />} />
+                    <SideIcons icon={<MdOutlineAccountCircle />} />
+                    <SideIcons icon={<HiOutlineSquaresPlus />} />
                 </div>
                 <div className='flex flex-col items-center mb-10 space-y-3'>
-                    <SideIcons icon={<SlSettings color='black'/>} />
+                    <SideIcons icon={<SlSettings />} />
                 </div>
             </div>
         </>
