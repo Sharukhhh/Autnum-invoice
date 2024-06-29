@@ -18,7 +18,7 @@ const Navbar = () => {
                 </h1>
                 <div className='flex items-center space-x-6'>
                     <input type="text" placeholder='Search...'
-                    className='px-8 py-2 rounded border border-gray-300 focus:outline-none'
+                    className='px-4 py-2 rounded border border-gray-300 focus:outline-none'
                     />
                     <LuClock7 size={20}/>
                     <TbMessage2Plus size={20}/>

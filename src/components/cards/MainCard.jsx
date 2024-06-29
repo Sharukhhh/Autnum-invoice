@@ -23,7 +23,7 @@ const MainCard = ({mainTitle , hasTable , isApprovals}) => {
                     </>
                 )}
                 {!hasTable && !isApprovals && (
-                    <div className='flex justify-end mb-2'>
+                    <div className='flex justify-end my-3'>
                         <Button text={'Apply to all'}/>
                     </div>
                 )}
